@@ -1,0 +1,501 @@
+feedback,category,sentiment
+The laboratory equipment needs to be upgraded.,Infrastructure,Negative
+The professor explains difficult concepts very clearly.,Faculty,Positive
+The laboratory equipment is sufficient for practical sessions.,Infrastructure,Positive
+The classrooms are clean and well maintained.,Infrastructure,Positive
+The Wi-Fi is very slow in the library.,Infrastructure,Negative
+The faculty does not provide enough feedback.,Faculty,Negative
+The faculty conducts regular classes.,Faculty,Neutral
+The administration could provide faster support.,Administration,Negative
+The hostel provides a comfortable study environment.,Hostel,Positive
+The timetable leaves very little time for revision.,Academics,Negative
+The Wi-Fi connection in the hostel is unreliable.,Hostel,Negative
+The assignments are sometimes difficult to understand.,Academics,Negative
+Several computers in the lab are not working.,Infrastructure,Negative
+The lectures provide a good understanding of the subject.,Academics,Positive
+The college publishes administrative notices regularly.,Administration,Neutral
+The course needs more practical examples.,Academics,Negative
+The staff are helpful when handling student requests.,Administration,Positive
+Some concepts are not explained in enough detail.,Faculty,Negative
+There is too much content to cover before the exams.,Academics,Negative
+The college publishes administrative notices regularly.,Administration,Neutral
+The hostel rooms are clean and comfortable.,Hostel,Positive
+The library has good study facilities.,Infrastructure,Positive
+Important notices are not always communicated on time.,Administration,Negative
+It is difficult to approach the professor outside class.,Faculty,Negative
+Some topics are covered too quickly.,Academics,Negative
+The hostel food quality needs improvement.,Hostel,Negative
+The hostel food quality needs improvement.,Hostel,Negative
+The teacher provides the required course material.,Faculty,Neutral
+The classrooms have projector facilities.,Infrastructure,Neutral
+The hostel follows the scheduled meal timings.,Hostel,Neutral
+Important notices are not always communicated on time.,Administration,Negative
+The hostel food quality has improved.,Hostel,Positive
+The classrooms are clean and well maintained.,Infrastructure,Positive
+The staff are helpful when handling student requests.,Administration,Positive
+The professor moves through some topics too quickly.,Faculty,Negative
+The hostel has common recreational areas.,Hostel,Neutral
+The academic resources are useful for exam preparation.,Academics,Positive
+The classrooms have good audiovisual facilities.,Infrastructure,Positive
+The faculty conducts regular classes.,Faculty,Neutral
+The academic resources are useful for exam preparation.,Academics,Positive
+The library follows regular operating hours.,Infrastructure,Neutral
+The faculty provides useful feedback on assignments.,Faculty,Positive
+The registration process is simple and organized.,Administration,Positive
+The professor uses practical examples during lectures.,Faculty,Positive
+The lectures could include more practical examples.,Faculty,Negative
+The faculty conducts periodic assessments.,Faculty,Neutral
+The practical sessions complement the theory very well.,Academics,Positive
+The professor answers questions patiently.,Faculty,Positive
+The syllabus covers useful and relevant topics.,Academics,Positive
+The teacher provides the required course material.,Faculty,Neutral
+The assignments are given regularly.,Academics,Neutral
+The laboratory equipment is sufficient for practical sessions.,Infrastructure,Positive
+The administration takes too long to respond.,Administration,Negative
+The laboratories are used for practical classes.,Infrastructure,Neutral
+The Wi-Fi is very slow in the library.,Infrastructure,Negative
+The hostel provides regular maintenance services.,Hostel,Neutral
+The administration could provide faster support.,Administration,Negative
+Several computers in the lab are not working.,Infrastructure,Negative
+The administration takes too long to respond.,Administration,Negative
+The internet connection keeps disconnecting.,Infrastructure,Negative
+The hostel rooms are assigned according to availability.,Hostel,Neutral
+The hostel follows fixed entry and exit timings.,Hostel,Neutral
+The library follows regular operating hours.,Infrastructure,Neutral
+There is too much content to cover before the exams.,Academics,Negative
+The administration handles student requests through the office.,Administration,Neutral
+The staff are helpful when handling student requests.,Administration,Positive
+It is difficult to approach the professor outside class.,Faculty,Negative
+The administration could provide faster support.,Administration,Negative
+The course includes internal assessments.,Academics,Neutral
+The classrooms have projector facilities.,Infrastructure,Neutral
+The common areas are sometimes not cleaned properly.,Hostel,Negative
+The hostel food quality needs improvement.,Hostel,Negative
+There are not enough laundry facilities.,Hostel,Negative
+The classrooms are clean and well maintained.,Infrastructure,Positive
+The administration handles student requests through the office.,Administration,Neutral
+The office follows scheduled working hours.,Administration,Neutral
+The hostel follows fixed entry and exit timings.,Hostel,Neutral
+There is too much content to cover before the exams.,Academics,Negative
+The hostel follows the scheduled meal timings.,Hostel,Neutral
+The administration provides information about college procedures.,Administration,Neutral
+Student documents are processed efficiently.,Administration,Positive
+The campus provides reliable internet access.,Infrastructure,Positive
+The teachers encourage students to participate in class.,Faculty,Positive
+Important notices are not always communicated on time.,Administration,Negative
+The administration provides clear instructions.,Administration,Positive
+The administration provides information about college procedures.,Administration,Neutral
+The campus provides Wi-Fi access.,Infrastructure,Neutral
+The hostel rooms need better maintenance.,Hostel,Negative
+The hostel has common recreational areas.,Hostel,Neutral
+The Wi-Fi is very slow in the library.,Infrastructure,Negative
+The professor follows the planned lecture schedule.,Faculty,Neutral
+The timetable leaves very little time for revision.,Academics,Negative
+The administration provides clear instructions.,Administration,Positive
+Several computers in the lab are not working.,Infrastructure,Negative
+The library follows regular operating hours.,Infrastructure,Neutral
+The hostel provides a comfortable study environment.,Hostel,Positive
+Students have to wait too long at the office.,Administration,Negative
+The course needs more practical examples.,Academics,Negative
+The semester includes regular examinations.,Academics,Neutral
+The hostel food quality needs improvement.,Hostel,Negative
+Important notices are not always communicated on time.,Administration,Negative
+It is difficult to approach the professor outside class.,Faculty,Negative
+The professor follows the planned lecture schedule.,Faculty,Neutral
+Several computers in the lab are not working.,Infrastructure,Negative
+The practical sessions complement the theory very well.,Academics,Positive
+The hostel follows the scheduled meal timings.,Hostel,Neutral
+There are not enough laundry facilities.,Hostel,Negative
+The computer lab is available during scheduled hours.,Infrastructure,Neutral
+The hostel staff are helpful and responsive.,Hostel,Positive
+The faculty provides useful feedback on assignments.,Faculty,Positive
+The campus provides Wi-Fi access.,Infrastructure,Neutral
+There are not enough laundry facilities.,Hostel,Negative
+The campus provides Wi-Fi access.,Infrastructure,Neutral
+Questions are sometimes not addressed during class.,Faculty,Negative
+Students have to wait too long at the office.,Administration,Negative
+The teachers encourage students to participate in class.,Faculty,Positive
+The computer lab is available during scheduled hours.,Infrastructure,Neutral
+The faculty members are supportive and approachable.,Faculty,Positive
+The hostel facilities are convenient for students.,Hostel,Positive
+The faculty members are supportive and approachable.,Faculty,Positive
+The faculty conducts periodic assessments.,Faculty,Neutral
+The hostel staff are helpful and responsive.,Hostel,Positive
+The hostel facilities are convenient for students.,Hostel,Positive
+The hostel food quality has improved.,Hostel,Positive
+The faculty does not provide enough feedback.,Faculty,Negative
+The internet connection keeps disconnecting.,Infrastructure,Negative
+It is difficult to approach the professor outside class.,Faculty,Negative
+The course structure is clear and well planned.,Academics,Positive
+The faculty does not provide enough feedback.,Faculty,Negative
+The staff are helpful when handling student requests.,Administration,Positive
+There are not enough laundry facilities.,Hostel,Negative
+The teachers encourage students to participate in class.,Faculty,Positive
+The syllabus contains several technical topics.,Academics,Neutral
+The study material is not sufficient for some topics.,Academics,Negative
+Students submit documents through the administration office.,Administration,Neutral
+The teachers encourage students to participate in class.,Faculty,Positive
+The office staff communicate information clearly.,Administration,Positive
+The timetable leaves very little time for revision.,Academics,Negative
+The library does not have enough study space.,Infrastructure,Negative
+The professor moves through some topics too quickly.,Faculty,Negative
+The library follows regular operating hours.,Infrastructure,Neutral
+The lectures could include more practical examples.,Faculty,Negative
+The syllabus contains several technical topics.,Academics,Neutral
+The campus provides reliable internet access.,Infrastructure,Positive
+The course structure is clear and well planned.,Academics,Positive
+There is too much content to cover before the exams.,Academics,Negative
+It is difficult to approach the professor outside class.,Faculty,Negative
+The practical sessions complement the theory very well.,Academics,Positive
+The practical sessions complement the theory very well.,Academics,Positive
+The library follows regular operating hours.,Infrastructure,Neutral
+The syllabus covers useful and relevant topics.,Academics,Positive
+The laboratories are used for practical classes.,Infrastructure,Neutral
+The hostel rooms need better maintenance.,Hostel,Negative
+The common areas are maintained properly.,Hostel,Positive
+The subject has both theory and practical components.,Academics,Neutral
+The registration process is simple and organized.,Administration,Positive
+Student documents are processed efficiently.,Administration,Positive
+The hostel maintenance requests take too long.,Hostel,Negative
+The common areas are sometimes not cleaned properly.,Hostel,Negative
+The computer lab has modern and useful equipment.,Infrastructure,Positive
+The faculty provides useful feedback on assignments.,Faculty,Positive
+The professor moves through some topics too quickly.,Faculty,Negative
+The timetable leaves very little time for revision.,Academics,Negative
+Administrative procedures are sometimes confusing.,Administration,Negative
+The teacher provides the required course material.,Faculty,Neutral
+The faculty does not provide enough feedback.,Faculty,Negative
+The hostel follows fixed entry and exit timings.,Hostel,Neutral
+The office staff communicate information clearly.,Administration,Positive
+The professor takes attendance regularly.,Faculty,Neutral
+The academic resources are useful for exam preparation.,Academics,Positive
+The classroom projectors frequently have problems.,Infrastructure,Negative
+The registration process is simple and organized.,Administration,Positive
+The professor takes attendance regularly.,Faculty,Neutral
+The computer lab is available during scheduled hours.,Infrastructure,Neutral
+The classrooms have projector facilities.,Infrastructure,Neutral
+The administration handles student requests through the office.,Administration,Neutral
+The computer lab has modern and useful equipment.,Infrastructure,Positive
+The professor takes attendance regularly.,Faculty,Neutral
+The professor takes attendance regularly.,Faculty,Neutral
+The semester includes regular examinations.,Academics,Neutral
+The syllabus contains several technical topics.,Academics,Neutral
+The hostel has common recreational areas.,Hostel,Neutral
+The computer lab has modern and useful equipment.,Infrastructure,Positive
+The internet connection keeps disconnecting.,Infrastructure,Negative
+The administration takes too long to respond.,Administration,Negative
+The course follows the prescribed syllabus.,Academics,Neutral
+The campus provides Wi-Fi access.,Infrastructure,Neutral
+The library has good study facilities.,Infrastructure,Positive
+The common areas are sometimes not cleaned properly.,Hostel,Negative
+The administration provides information about college procedures.,Administration,Neutral
+The administration could provide faster support.,Administration,Negative
+The faculty conducts regular classes.,Faculty,Neutral
+Administrative procedures are sometimes confusing.,Administration,Negative
+The faculty does not provide enough feedback.,Faculty,Negative
+The professor takes attendance regularly.,Faculty,Neutral
+The professor uses practical examples during lectures.,Faculty,Positive
+The classrooms have good audiovisual facilities.,Infrastructure,Positive
+The computer lab has modern and useful equipment.,Infrastructure,Positive
+The administration provides clear instructions.,Administration,Positive
+The library does not have enough study space.,Infrastructure,Negative
+There are not enough laundry facilities.,Hostel,Negative
+The syllabus is difficult to complete within the semester.,Academics,Negative
+The course structure is clear and well planned.,Academics,Positive
+Important notices are not always communicated on time.,Administration,Negative
+The lectures could include more practical examples.,Faculty,Negative
+The college publishes administrative notices regularly.,Administration,Neutral
+The administration provides information about college procedures.,Administration,Neutral
+The office follows scheduled working hours.,Administration,Neutral
+The teachers encourage students to participate in class.,Faculty,Positive
+The faculty conducts regular classes.,Faculty,Neutral
+The hostel follows the scheduled meal timings.,Hostel,Neutral
+The professor takes attendance regularly.,Faculty,Neutral
+There is too much content to cover before the exams.,Academics,Negative
+There are not enough laundry facilities.,Hostel,Negative
+The syllabus is difficult to complete within the semester.,Academics,Negative
+The professor moves through some topics too quickly.,Faculty,Negative
+The faculty provides useful feedback on assignments.,Faculty,Positive
+The hostel follows fixed entry and exit timings.,Hostel,Neutral
+The administration handles student requests through the office.,Administration,Neutral
+Student documents are processed efficiently.,Administration,Positive
+The office staff communicate information clearly.,Administration,Positive
+It is difficult to approach the professor outside class.,Faculty,Negative
+The study material is not sufficient for some topics.,Academics,Negative
+The document verification process is slow.,Administration,Negative
+The subject has both theory and practical components.,Academics,Neutral
+The syllabus is difficult to complete within the semester.,Academics,Negative
+The syllabus contains several technical topics.,Academics,Neutral
+The hostel follows fixed entry and exit timings.,Hostel,Neutral
+The professor moves through some topics too quickly.,Faculty,Negative
+The professor takes attendance regularly.,Faculty,Neutral
+The faculty conducts regular classes.,Faculty,Neutral
+The course content is well organized and easy to follow.,Academics,Positive
+The syllabus contains several technical topics.,Academics,Neutral
+The administration takes too long to respond.,Administration,Negative
+The office follows scheduled working hours.,Administration,Neutral
+The professor answers questions patiently.,Faculty,Positive
+Some concepts are not explained in enough detail.,Faculty,Negative
+Student documents are processed efficiently.,Administration,Positive
+The faculty conducts periodic assessments.,Faculty,Neutral
+The course follows the prescribed syllabus.,Academics,Neutral
+The classroom projectors frequently have problems.,Infrastructure,Negative
+The administration provides information about college procedures.,Administration,Neutral
+The hostel food quality has improved.,Hostel,Positive
+The hostel has common recreational areas.,Hostel,Neutral
+The common areas are sometimes not cleaned properly.,Hostel,Negative
+The classrooms are clean and well maintained.,Infrastructure,Positive
+The hostel staff are helpful and responsive.,Hostel,Positive
+Some classrooms need better maintenance.,Infrastructure,Negative
+The assignments are given regularly.,Academics,Neutral
+The common areas are sometimes not cleaned properly.,Hostel,Negative
+The assignments are sometimes difficult to understand.,Academics,Negative
+The classrooms are clean and well maintained.,Infrastructure,Positive
+The assignments are sometimes difficult to understand.,Academics,Negative
+The college publishes administrative notices regularly.,Administration,Neutral
+The course follows the prescribed syllabus.,Academics,Neutral
+The study material is not sufficient for some topics.,Academics,Negative
+The administration responds quickly to student queries.,Administration,Positive
+Administrative procedures are sometimes confusing.,Administration,Negative
+The office staff communicate information clearly.,Administration,Positive
+The computer lab is available during scheduled hours.,Infrastructure,Neutral
+The hostel provides regular maintenance services.,Hostel,Neutral
+Important notices are not always communicated on time.,Administration,Negative
+The hostel staff are helpful and responsive.,Hostel,Positive
+The office follows scheduled working hours.,Administration,Neutral
+The syllabus is difficult to complete within the semester.,Academics,Negative
+The administration provides clear instructions.,Administration,Positive
+The faculty conducts regular classes.,Faculty,Neutral
+The office follows scheduled working hours.,Administration,Neutral
+Student documents are processed efficiently.,Administration,Positive
+Important notices are not always communicated on time.,Administration,Negative
+The course includes internal assessments.,Academics,Neutral
+The laboratory equipment is sufficient for practical sessions.,Infrastructure,Positive
+The semester includes regular examinations.,Academics,Neutral
+The hostel provides regular maintenance services.,Hostel,Neutral
+The administration responds quickly to student queries.,Administration,Positive
+Several computers in the lab are not working.,Infrastructure,Negative
+The faculty conducts regular classes.,Faculty,Neutral
+The registration process is simple and organized.,Administration,Positive
+Some classrooms need better maintenance.,Infrastructure,Negative
+Important notices are not always communicated on time.,Administration,Negative
+The library has good study facilities.,Infrastructure,Positive
+The hostel rooms are clean and comfortable.,Hostel,Positive
+The hostel rooms need better maintenance.,Hostel,Negative
+The administration could provide faster support.,Administration,Negative
+The professor moves through some topics too quickly.,Faculty,Negative
+The professor takes attendance regularly.,Faculty,Neutral
+The hostel facilities are convenient for students.,Hostel,Positive
+The faculty members are supportive and approachable.,Faculty,Positive
+The library has good study facilities.,Infrastructure,Positive
+The classrooms are clean and well maintained.,Infrastructure,Positive
+The professor follows the planned lecture schedule.,Faculty,Neutral
+The practical sessions complement the theory very well.,Academics,Positive
+The office staff communicate information clearly.,Administration,Positive
+The administration takes too long to respond.,Administration,Negative
+The course needs more practical examples.,Academics,Negative
+Questions are sometimes not addressed during class.,Faculty,Negative
+The classroom projectors frequently have problems.,Infrastructure,Negative
+The hostel rooms need better maintenance.,Hostel,Negative
+The office staff communicate information clearly.,Administration,Positive
+The course content is well organized and easy to follow.,Academics,Positive
+The lectures provide a good understanding of the subject.,Academics,Positive
+The course content is well organized and easy to follow.,Academics,Positive
+The syllabus contains several technical topics.,Academics,Neutral
+The professor explains difficult concepts very clearly.,Faculty,Positive
+Student documents are processed efficiently.,Administration,Positive
+The office staff communicate information clearly.,Administration,Positive
+The office follows scheduled working hours.,Administration,Neutral
+The assignments are sometimes difficult to understand.,Academics,Negative
+The campus provides Wi-Fi access.,Infrastructure,Neutral
+The administration handles student requests through the office.,Administration,Neutral
+There are not enough laundry facilities.,Hostel,Negative
+The subject has both theory and practical components.,Academics,Neutral
+The academic resources are useful for exam preparation.,Academics,Positive
+The hostel follows fixed entry and exit timings.,Hostel,Neutral
+The hostel rooms are assigned according to availability.,Hostel,Neutral
+The classrooms are clean and well maintained.,Infrastructure,Positive
+The common areas are maintained properly.,Hostel,Positive
+The classrooms are clean and well maintained.,Infrastructure,Positive
+The registration process is simple and organized.,Administration,Positive
+The professor follows the planned lecture schedule.,Faculty,Neutral
+The assignments are given regularly.,Academics,Neutral
+The assignments helped me understand the concepts better.,Academics,Positive
+The professor uses practical examples during lectures.,Faculty,Positive
+The office staff communicate information clearly.,Administration,Positive
+The semester includes regular examinations.,Academics,Neutral
+The professor answers questions patiently.,Faculty,Positive
+The syllabus contains several technical topics.,Academics,Neutral
+The classrooms have good audiovisual facilities.,Infrastructure,Positive
+The hostel maintenance requests take too long.,Hostel,Negative
+The administration takes too long to respond.,Administration,Negative
+The registration process is simple and organized.,Administration,Positive
+The assignments helped me understand the concepts better.,Academics,Positive
+The administration provides clear instructions.,Administration,Positive
+The course includes internal assessments.,Academics,Neutral
+The faculty conducts periodic assessments.,Faculty,Neutral
+The classrooms are clean and well maintained.,Infrastructure,Positive
+The hostel follows fixed entry and exit timings.,Hostel,Neutral
+The professor takes attendance regularly.,Faculty,Neutral
+The professor moves through some topics too quickly.,Faculty,Negative
+Students have to wait too long at the office.,Administration,Negative
+The course content is well organized and easy to follow.,Academics,Positive
+The assignments helped me understand the concepts better.,Academics,Positive
+The administration provides information about college procedures.,Administration,Neutral
+The subject has both theory and practical components.,Academics,Neutral
+It is difficult to approach the professor outside class.,Faculty,Negative
+The computer lab is available during scheduled hours.,Infrastructure,Neutral
+The assignments helped me understand the concepts better.,Academics,Positive
+The assignments are sometimes difficult to understand.,Academics,Negative
+The laboratory equipment needs to be upgraded.,Infrastructure,Negative
+The course content is well organized and easy to follow.,Academics,Positive
+The administration responds quickly to student queries.,Administration,Positive
+The administration responds quickly to student queries.,Administration,Positive
+The hostel rooms are clean and comfortable.,Hostel,Positive
+Administrative procedures are sometimes confusing.,Administration,Negative
+Questions are sometimes not addressed during class.,Faculty,Negative
+The professor moves through some topics too quickly.,Faculty,Negative
+Students submit documents through the administration office.,Administration,Neutral
+The registration process is simple and organized.,Administration,Positive
+The Wi-Fi is very slow in the library.,Infrastructure,Negative
+Students have to wait too long at the office.,Administration,Negative
+The Wi-Fi is very slow in the library.,Infrastructure,Negative
+The registration process is simple and organized.,Administration,Positive
+The administration responds quickly to student queries.,Administration,Positive
+Important notices are not always communicated on time.,Administration,Negative
+The common areas are sometimes not cleaned properly.,Hostel,Negative
+The faculty conducts regular classes.,Faculty,Neutral
+The laboratory equipment needs to be upgraded.,Infrastructure,Negative
+The course content is well organized and easy to follow.,Academics,Positive
+The faculty conducts regular classes.,Faculty,Neutral
+Some classrooms need better maintenance.,Infrastructure,Negative
+The course structure is clear and well planned.,Academics,Positive
+Students have to wait too long at the office.,Administration,Negative
+Some topics are covered too quickly.,Academics,Negative
+Important notices are not always communicated on time.,Administration,Negative
+The document verification process is slow.,Administration,Negative
+The administration responds quickly to student queries.,Administration,Positive
+The faculty conducts regular classes.,Faculty,Neutral
+The professor takes attendance regularly.,Faculty,Neutral
+The assignments are sometimes difficult to understand.,Academics,Negative
+The library does not have enough study space.,Infrastructure,Negative
+The academic resources are useful for exam preparation.,Academics,Positive
+The classrooms have projector facilities.,Infrastructure,Neutral
+Students submit documents through the administration office.,Administration,Neutral
+The classrooms have good audiovisual facilities.,Infrastructure,Positive
+The course needs more practical examples.,Academics,Negative
+The hostel maintenance requests take too long.,Hostel,Negative
+There is too much content to cover before the exams.,Academics,Negative
+The administration provides information about college procedures.,Administration,Neutral
+The syllabus covers useful and relevant topics.,Academics,Positive
+The laboratory equipment is sufficient for practical sessions.,Infrastructure,Positive
+The faculty provides useful feedback on assignments.,Faculty,Positive
+Students have to wait too long at the office.,Administration,Negative
+The hostel provides a comfortable study environment.,Hostel,Positive
+The syllabus contains several technical topics.,Academics,Neutral
+The course content is well organized and easy to follow.,Academics,Positive
+There are not enough laundry facilities.,Hostel,Negative
+The teachers encourage students to participate in class.,Faculty,Positive
+The teacher provides the required course material.,Faculty,Neutral
+The administration provides information about college procedures.,Administration,Neutral
+The professor answers questions patiently.,Faculty,Positive
+Important notices are not always communicated on time.,Administration,Negative
+Several computers in the lab are not working.,Infrastructure,Negative
+The professor uses practical examples during lectures.,Faculty,Positive
+The syllabus covers useful and relevant topics.,Academics,Positive
+The course follows the prescribed syllabus.,Academics,Neutral
+The professor takes attendance regularly.,Faculty,Neutral
+The hostel rooms are assigned according to availability.,Hostel,Neutral
+Students submit documents through the administration office.,Administration,Neutral
+Students submit documents through the administration office.,Administration,Neutral
+The hostel rooms are clean and comfortable.,Hostel,Positive
+The library does not have enough study space.,Infrastructure,Negative
+The administration responds quickly to student queries.,Administration,Positive
+The college publishes administrative notices regularly.,Administration,Neutral
+The course structure is clear and well planned.,Academics,Positive
+The Wi-Fi is very slow in the library.,Infrastructure,Negative
+The hostel provides a comfortable study environment.,Hostel,Positive
+The campus provides Wi-Fi access.,Infrastructure,Neutral
+Administrative procedures are sometimes confusing.,Administration,Negative
+The registration process is simple and organized.,Administration,Positive
+The hostel facilities are convenient for students.,Hostel,Positive
+The classrooms are clean and well maintained.,Infrastructure,Positive
+The common areas are maintained properly.,Hostel,Positive
+The computer lab is available during scheduled hours.,Infrastructure,Neutral
+The hostel food quality has improved.,Hostel,Positive
+The course follows the prescribed syllabus.,Academics,Neutral
+The document verification process is slow.,Administration,Negative
+The assignments are given regularly.,Academics,Neutral
+The college publishes administrative notices regularly.,Administration,Neutral
+Important notices are not always communicated on time.,Administration,Negative
+The library does not have enough study space.,Infrastructure,Negative
+The timetable leaves very little time for revision.,Academics,Negative
+The laboratory equipment needs to be upgraded.,Infrastructure,Negative
+The computer lab is available during scheduled hours.,Infrastructure,Neutral
+The teachers encourage students to participate in class.,Faculty,Positive
+The course follows the prescribed syllabus.,Academics,Neutral
+The common areas are sometimes not cleaned properly.,Hostel,Negative
+Some topics are covered too quickly.,Academics,Negative
+There are not enough laundry facilities.,Hostel,Negative
+The subject has both theory and practical components.,Academics,Neutral
+The hostel facilities are convenient for students.,Hostel,Positive
+The campus provides Wi-Fi access.,Infrastructure,Neutral
+The common areas are sometimes not cleaned properly.,Hostel,Negative
+The administration responds quickly to student queries.,Administration,Positive
+The subject has both theory and practical components.,Academics,Neutral
+The faculty conducts regular classes.,Faculty,Neutral
+The syllabus covers useful and relevant topics.,Academics,Positive
+Some classrooms need better maintenance.,Infrastructure,Negative
+The common areas are maintained properly.,Hostel,Positive
+The laboratories are used for practical classes.,Infrastructure,Neutral
+The professor follows the planned lecture schedule.,Faculty,Neutral
+The hostel facilities are convenient for students.,Hostel,Positive
+The hostel rooms are assigned according to availability.,Hostel,Neutral
+The classroom projectors frequently have problems.,Infrastructure,Negative
+The faculty does not provide enough feedback.,Faculty,Negative
+The administration provides clear instructions.,Administration,Positive
+The lectures provide a good understanding of the subject.,Academics,Positive
+The common areas are sometimes not cleaned properly.,Hostel,Negative
+Students submit documents through the administration office.,Administration,Neutral
+The course content is well organized and easy to follow.,Academics,Positive
+The campus provides Wi-Fi access.,Infrastructure,Neutral
+The laboratory equipment needs to be upgraded.,Infrastructure,Negative
+The hostel facilities are convenient for students.,Hostel,Positive
+The laboratories are used for practical classes.,Infrastructure,Neutral
+The practical sessions complement the theory very well.,Academics,Positive
+The teacher provides the required course material.,Faculty,Neutral
+The course structure is clear and well planned.,Academics,Positive
+The classrooms have projector facilities.,Infrastructure,Neutral
+The hostel food quality needs improvement.,Hostel,Negative
+The hostel maintenance requests take too long.,Hostel,Negative
+The assignments are sometimes difficult to understand.,Academics,Negative
+The hostel facilities are convenient for students.,Hostel,Positive
+Students submit documents through the administration office.,Administration,Neutral
+The practical sessions complement the theory very well.,Academics,Positive
+The common areas are maintained properly.,Hostel,Positive
+Students have to wait too long at the office.,Administration,Negative
+Administrative procedures are sometimes confusing.,Administration,Negative
+The classrooms are clean and well maintained.,Infrastructure,Positive
+Important notices are not always communicated on time.,Administration,Negative
+It is difficult to approach the professor outside class.,Faculty,Negative
+The college publishes administrative notices regularly.,Administration,Neutral
+The faculty does not provide enough feedback.,Faculty,Negative
+The document verification process is slow.,Administration,Negative
+It is difficult to approach the professor outside class.,Faculty,Negative
+It is difficult to approach the professor outside class.,Faculty,Negative
+The administration handles student requests through the office.,Administration,Neutral
+The Wi-Fi is very slow in the library.,Infrastructure,Negative
+The professor follows the planned lecture schedule.,Faculty,Neutral
+Some classrooms need better maintenance.,Infrastructure,Negative
+The study material is not sufficient for some topics.,Academics,Negative
+The semester includes regular examinations.,Academics,Neutral
+The administration provides information about college procedures.,Administration,Neutral
+Administrative procedures are sometimes confusing.,Administration,Negative
+The faculty provides useful feedback on assignments.,Faculty,Positive
+The classrooms have good audiovisual facilities.,Infrastructure,Positive
+The laboratory equipment needs to be upgraded.,Infrastructure,Negative
+The classroom projectors frequently have problems.,Infrastructure,Negative
+Important notices are not always communicated on time.,Administration,Negative
+The study material is not sufficient for some topics.,Academics,Negative
+The administration could provide faster support.,Administration,Negative
+The course follows the prescribed syllabus.,Academics,Neutral
