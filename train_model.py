@@ -1,42 +1,86 @@
 import pandas as pd
-import re
 import joblib
+import re
+
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 
-# Load dataset
-df = pd.read_csv("dataset/student_feedback_dataset.csv")
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score, classification_report
 
-# Stopwords
+
+# --------------------------------------------------
+# 1. Load dataset
+# --------------------------------------------------
+
+df = pd.read_csv(
+    "dataset/student_feedback_kaggle_clean.csv"
+)
+
+print("Dataset loaded successfully!")
+print("Total feedback records:", len(df))
+
+
+# --------------------------------------------------
+# 2. Text preprocessing
+# --------------------------------------------------
+
 stop_words = set(stopwords.words("english"))
 
-# Keep negation words because they affect sentiment
+# Keep negation words because they are important
+# for sentiment analysis
 negation_words = {
-    "no", "not", "nor", "never",
-    "neither", "hardly", "scarcely", "barely"
+    "no",
+    "not",
+    "nor",
+    "never",
+    "neither",
+    "hardly",
+    "scarcely",
+    "barely"
 }
 
+# Remove negation words from stopwords
 stop_words = stop_words - negation_words
 
-# Lemmatizer
+# Remove informal abbreviation
+stop_words.update({"u"})
+
 lemmatizer = WordNetLemmatizer()
 
 
-# Text preprocessing function
 def clean_text(text):
-    # Convert to lowercase
+
+    # Convert to string
+    text = str(text)
+
+    # Lowercase
     text = text.lower()
 
-    # Remove punctuation and numbers
-    text = re.sub(r"[^a-zA-Z\s]", "", text)
+    # Replace punctuation/numbers with spaces
+    text = re.sub(
+        r"[^a-zA-Z\s]",
+        " ",
+        text
+    )
+
+    # Remove extra spaces
+    text = re.sub(
+        r"\s+",
+        " ",
+        text
+    ).strip()
 
     # Tokenization
     words = word_tokenize(text)
 
-    # Remove stopwords
+    # Stopword removal
     words = [
-        word for word in words
+        word
+        for word in words
         if word not in stop_words
     ]
 
@@ -50,138 +94,237 @@ def clean_text(text):
 
 
 # Apply preprocessing
-df["cleaned_feedback"] = df["feedback"].apply(clean_text)
-
-# Check the results
-print("\nORIGINAL vs CLEANED:\n")
-
-for i in range(5):
-    print("Original :", df["feedback"].iloc[i])
-    print("Cleaned  :", df["cleaned_feedback"].iloc[i])
-    print("-" * 50)
-
-from sklearn.feature_extraction.text import TfidfVectorizer
-
-# Create TF-IDF vectorizer
-vectorizer = TfidfVectorizer()
-
-# Convert cleaned text into numerical features
-X = vectorizer.fit_transform(df["cleaned_feedback"])
-joblib.dump(vectorizer, "models/tfidf_vectorizer.pkl")
-print("\nTF-IDF completed!")
-print("Number of feedback records:", X.shape[0])
-print("Number of features:", X.shape[1])
-
-from sklearn.model_selection import train_test_split
-
-# Target variable: feedback category
-y = df["category"]
-
-# Split data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(
-    X,
-    y,
-    test_size=0.2,
-    random_state=42,
-    stratify=y
+df["cleaned_feedback"] = (
+    df["feedback"].apply(clean_text)
 )
 
-print("\nData split completed!")
-print("Training samples:", X_train.shape[0])
-print("Testing samples:", X_test.shape[0])
-
-from sklearn.linear_model import LogisticRegression
-
-# Create the model
-category_model = LogisticRegression(max_iter=1000)
-
-# Train the model
-category_model.fit(X_train, y_train)
-joblib.dump(category_model, "models/category_model.pkl")
-print("\nCategory model trained successfully!")
-
-from sklearn.metrics import accuracy_score, classification_report
-
-# Predict categories for test data
-y_pred = category_model.predict(X_test)
-
-# Calculate accuracy
-accuracy = accuracy_score(y_test, y_pred)
-
-print("\nCategory Classification Results")
-print("Accuracy:", accuracy)
-
-# Detailed evaluation
-print("\nClassification Report:")
-print(classification_report(y_test, y_pred))
+print("\nText preprocessing completed!")
 
 
+# --------------------------------------------------
+# 3. Prepare input and labels
+# --------------------------------------------------
 
-# -----------------------------
-# SENTIMENT CLASSIFICATION
-# -----------------------------
+X_text = df["cleaned_feedback"]
 
-# Target variable: sentiment
+y_category = df["category"]
+
 y_sentiment = df["sentiment"]
 
-# Split data
-X_train_s, X_test_s, y_train_s, y_test_s = train_test_split(
-    X,
-    y_sentiment,
-    test_size=0.2,
-    random_state=42,
-    stratify=y_sentiment
+
+# --------------------------------------------------
+# 4. TF-IDF Vectorization
+# --------------------------------------------------
+
+# Learn both individual words and word pairs.
+#
+# (1,1) = only individual words
+# (1,2) = individual words + two-word phrases
+#
+# This helps with phrases such as:
+# "not bad"
+# "not good"
+# "very good"
+# "not useful"
+
+vectorizer = TfidfVectorizer(
+    ngram_range=(1, 2),
+    min_df=1
 )
 
-# Create sentiment model
-sentiment_model = LogisticRegression(max_iter=1000)
+X = vectorizer.fit_transform(X_text)
 
-# Train model
-sentiment_model.fit(X_train_s, y_train_s)
+print("\nTF-IDF completed!")
 
-print("\nSentiment model trained successfully!")
-
-# Make predictions
-y_sentiment_pred = sentiment_model.predict(X_test_s)
-joblib.dump(sentiment_model, "models/sentiment_model.pkl")
-# Evaluate
-sentiment_accuracy = accuracy_score(
-    y_test_s,
-    y_sentiment_pred
-)
-
-print("\nSentiment Classification Results")
-print("Accuracy:", sentiment_accuracy)
-
-print("\nClassification Report:")
 print(
-    classification_report(
-        y_test_s,
-        y_sentiment_pred
+    "Number of feedback records:",
+    X.shape[0]
+)
+
+print(
+    "Number of TF-IDF features:",
+    X.shape[1]
+)
+
+
+# --------------------------------------------------
+# 5. Category train-test split
+# --------------------------------------------------
+
+X_train_cat, X_test_cat, y_category_train, y_category_test = (
+    train_test_split(
+        X,
+        y_category,
+        test_size=0.2,
+        random_state=42,
+        stratify=y_category
     )
 )
 
-# -----------------------------
-# TEST WITH NEW FEEDBACK
-# -----------------------------
+print("\nCategory training samples:", X_train_cat.shape[0])
+print("Category testing samples:", X_test_cat.shape[0])
 
-new_feedback = [
-    "The Wi-Fi in the hostel is extremely slow."
+
+# --------------------------------------------------
+# 6. Category Classification Model
+# --------------------------------------------------
+
+category_model = LogisticRegression(
+    max_iter=1000,
+    class_weight="balanced"
+)
+
+category_model.fit(
+    X_train_cat,
+    y_category_train
+)
+
+category_predictions = category_model.predict(
+    X_test_cat
+)
+
+category_accuracy = accuracy_score(
+    y_category_test,
+    category_predictions
+)
+
+print("\nCategory model trained successfully!")
+
+print("\nCategory Classification Results")
+
+print(
+    "Accuracy:",
+    category_accuracy
+)
+
+print("\nClassification Report:")
+
+print(
+    classification_report(
+        y_category_test,
+        category_predictions
+    )
+)
+
+
+# --------------------------------------------------
+# 7. Sentiment train-test split
+# --------------------------------------------------
+
+X_train_sent, X_test_sent, y_sentiment_train, y_sentiment_test = (
+    train_test_split(
+        X,
+        y_sentiment,
+        test_size=0.2,
+        random_state=42,
+        stratify=y_sentiment
+    )
+)
+
+print(
+    "\nSentiment training samples:",
+    X_train_sent.shape[0]
+)
+
+print(
+    "Sentiment testing samples:",
+    X_test_sent.shape[0]
+)
+
+
+# --------------------------------------------------
+# 8. Sentiment Classification Model
+# --------------------------------------------------
+
+sentiment_model = LogisticRegression(
+    max_iter=1000,
+    class_weight="balanced"
+)
+
+sentiment_model.fit(
+    X_train_sent,
+    y_sentiment_train
+)
+
+sentiment_predictions = sentiment_model.predict(
+    X_test_sent
+)
+
+sentiment_accuracy = accuracy_score(
+    y_sentiment_test,
+    sentiment_predictions
+)
+
+print("\nSentiment model trained successfully!")
+
+print("\nSentiment Classification Results")
+
+print(
+    "Accuracy:",
+    sentiment_accuracy
+)
+
+print("\nClassification Report:")
+
+print(
+    classification_report(
+        y_sentiment_test,
+        sentiment_predictions
+    )
+)
+
+
+# --------------------------------------------------
+# 9. Save trained models
+# --------------------------------------------------
+
+joblib.dump(
+    vectorizer,
+    "models/tfidf_vectorizer.pkl"
+)
+
+joblib.dump(
+    category_model,
+    "models/category_model.pkl"
+)
+
+joblib.dump(
+    sentiment_model,
+    "models/sentiment_model.pkl"
+)
+
+print("\nModels saved successfully!")
+
+
+# --------------------------------------------------
+# 10. Test new feedback
+# --------------------------------------------------
+
+test_feedback = [
+    "Not bad",
+    "The teacher explains concepts clearly but more practical examples are needed.",
+    "The examination was very difficult and poorly organized."
 ]
 
-# Clean the new feedback
-cleaned_new = [clean_text(text) for text in new_feedback]
+print("\nNEW FEEDBACK TESTS")
 
-# Convert to TF-IDF
-new_features = vectorizer.transform(cleaned_new)
+for text in test_feedback:
 
-# Predict category
-category_prediction = category_model.predict(new_features)
+    cleaned = clean_text(text)
 
-# Predict sentiment
-sentiment_prediction = sentiment_model.predict(new_features)
+    vector = vectorizer.transform(
+        [cleaned]
+    )
 
-print("\nNEW FEEDBACK TEST")
-print("Feedback:", new_feedback[0])
-print("Category:", category_prediction[0])
-print("Sentiment:", sentiment_prediction[0])
+    predicted_category = (
+        category_model.predict(vector)[0]
+    )
+
+    predicted_sentiment = (
+        sentiment_model.predict(vector)[0]
+    )
+
+    print("\nFeedback:", text)
+    print("Cleaned :", cleaned)
+    print("Category:", predicted_category)
+    print("Sentiment:", predicted_sentiment)
