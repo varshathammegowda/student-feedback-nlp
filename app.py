@@ -1,11 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
-import re
-
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
+from text_preprocessing import clean_text
 
 
 # --------------------------------------------------
@@ -30,66 +26,16 @@ st.write(
 # 2. Text preprocessing
 # --------------------------------------------------
 
-stop_words = set(stopwords.words("english"))
-
-negation_words = {
-    "no",
-    "not",
-    "nor",
-    "never",
-    "neither",
-    "hardly",
-    "scarcely",
-    "barely"
-}
-
-# Preserve negation words
-stop_words = stop_words - negation_words
-
-# Remove informal abbreviation
-stop_words.update({"u"})
-
-lemmatizer = WordNetLemmatizer()
-
-
-def clean_text(text):
-
-    text = str(text)
-
-    # Lowercase
-    text = text.lower()
-
-    # Replace punctuation and numbers with spaces
-    text = re.sub(r"[^a-zA-Z\s]", " ", text)
-
-    # Remove extra spaces
-    text = re.sub(r"\s+", " ", text).strip()
-
-    # Tokenization
-    words = word_tokenize(text)
-
-    # Stopword removal
-    words = [
-        word
-        for word in words
-        if word not in stop_words
-    ]
-
-    # Lemmatization
-    words = [
-        lemmatizer.lemmatize(word)
-        for word in words
-    ]
-
-    return " ".join(words)
-
-
 # --------------------------------------------------
 # 3. Load trained models
 # --------------------------------------------------
 
-vectorizer = joblib.load(
-    "models/tfidf_vectorizer.pkl"
+category_vectorizer = joblib.load(
+    "models/category_vectorizer.pkl"
+)
+
+sentiment_vectorizer = joblib.load(
+    "models/sentiment_vectorizer.pkl"
 )
 
 category_model = joblib.load(
@@ -220,7 +166,11 @@ if uploaded_file is not None:
         # 7. Convert text to TF-IDF
         # --------------------------------------------------
 
-        features = vectorizer.transform(
+        category_features = category_vectorizer.transform(
+            df["cleaned_feedback"]
+        )
+
+        sentiment_features = sentiment_vectorizer.transform(
             df["cleaned_feedback"]
         )
 
@@ -230,7 +180,7 @@ if uploaded_file is not None:
         # --------------------------------------------------
 
         df["category"] = (
-            category_model.predict(features)
+            category_model.predict(category_features)
         )
 
 
@@ -239,7 +189,7 @@ if uploaded_file is not None:
         # --------------------------------------------------
 
         df["sentiment"] = (
-            sentiment_model.predict(features)
+            sentiment_model.predict(sentiment_features)
         )
 
 
